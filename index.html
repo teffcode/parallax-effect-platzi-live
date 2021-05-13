@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Effect · Platzi Live</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .parallax-container {
+      position: relative;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      perspective: 8px;
+    }
+    .image {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 100%;
+    }
+    .image__background {
+      transform: translateZ(0px) scale(1);
+    }
+    .image__middle {
+      transform: translateZ(2px) scale(0.75);
+    }
+    .image__foreground {
+      transform: translateZ(5px) scale(0.375);
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax-container">
+    <div class="image image__background">
+      <img src="https://i.ibb.co/x7dMNxS/Background-1.png" alt="">
+    </div>
+    <div class="image image__middle">
+      <img src="https://i.ibb.co/R3sbhx0/Middle.png" alt="">
+    </div>
+    <div class="image image__foreground">
+      <img src="https://i.ibb.co/02hKVWF/Foreground.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
